@@ -1,5 +1,6 @@
 # Generate-ADUsersRandomly
-![BANNER](https://github.com/qschweitzer/Generate-ADUsersRandomly/medias/banner.jpg)
+![Banner](https://user-images.githubusercontent.com/36896812/163008548-58acd368-fd28-448e-aca8-757f59d39d91.jpg)
+
 Create Active Directory OU tree structure and generate users randomly with associate groups.
 **DON'T USE IN PRODUCTION ENVIRONNEMENT**
 This tool has been write to be used in some PoC.
