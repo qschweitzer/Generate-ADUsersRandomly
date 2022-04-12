@@ -1,0 +1,65 @@
+{
+    "OU": [{
+            "OUName": "SITEA\\USERS\\ACCOUNTING",
+            "NbUsers": 5,
+            "UsersDefaultGroups": [
+		"GR-ACCOUNTING"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\ADMINISTRATION",
+            "NbUsers": 20,
+            "UsersDefaultGroups": [
+		"GR-ADMINISTRATION"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\EXTERNAL",
+            "NbUsers": 5,
+            "UsersDefaultGroups": [
+		"GR-EXTERNAL"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\IT",
+            "NbUsers": 3,
+            "UsersDefaultGroups": [
+		"GR-IT"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\PRODUCTION",
+            "NbUsers": 20,
+            "UsersDefaultGroups": [
+		"GR-PRODUCTION"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\MARKETING",
+            "NbUsers": 10,
+            "UsersDefaultGroups": [
+		"GR-MARKETING"
+	]},
+        {
+            "OUName": "SITEA\\USERS\\MANAGEMENT",
+            "NbUsers": 5,
+            "UsersDefaultGroups": [
+		"GR-MANAGEMENT",
+		"GR-MARKETING",
+		"GR-PRODUCTION",
+		"GR-IT",
+		"GR-EXTERNAL",
+		"GR-ADMINISTRATION",
+		"GR-ACCOUNTING"
+	]}
+    ],
+    "GROUPS": [{
+            "OU": "SITEA\\GROUPS",
+            "GROUPS": [
+		"GR-ACCOUNTING",
+		"GR-ADMINISTRATION",
+		"GR-EXTERNAL",
+		"GR-IT",
+		"GR-PRODUCTION",
+		"GR-MARKETING",
+		"GR-MANAGEMENT",
+		"GR-RDSUsers",
+		"GR-RDSGatewayUsers"
+		]
+	}]
+}
