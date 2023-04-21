@@ -185,7 +185,6 @@ param($UsersArray,$OU,$Group)
         [string]$City = $_.location.city
         [string]$Address = ([string]($_.location.street.number)+" "+($_.location.street.name))
         [string]$PostalCode = $_.location.postcode
-        [string]$Country = $_.location.country
         [string]$State = $_.location.state
         [string]$OfficePhone = $_.phone
         [string]$MobilePhone = $_.cell
@@ -203,7 +202,7 @@ param($UsersArray,$OU,$Group)
         if(!($DisplayName -in $Script:ADUsers.DisplayName)){
             Write-Log -Type info -Prefix "USER CREATION" -Message "Creating ADUser $($DisplayName)"
             Write-Log -Type info -Prefix "USER CREATION" -Message "SamAccountName: $($SamAccountName)"
-            New-ADUser -Path $OU -DisplayName $DisplayName -AccountPassword $Password -SamAccountName $SamAccountName -UserPrincipalName $UserPrincipalName -GivenName $GivenName -Surname $SurName -Name $DisplayName -Enabled $true -City $City -State $State -Country $Country -StreetAddress $Address -EmailAddress $Email -OfficePhone $OfficePhone -Office $Office -PostalCode $PostalCode -MobilePhone $MobilePhone -ErrorAction SilentlyContinue -ErrorVariable erroruser
+            New-ADUser -Path $OU -DisplayName $DisplayName -AccountPassword $Password -SamAccountName $SamAccountName -UserPrincipalName $UserPrincipalName -GivenName $GivenName -Surname $SurName -Name $DisplayName -Enabled $true -City $City -State $State -StreetAddress $Address -EmailAddress $Email -OfficePhone $OfficePhone -Office $Office -PostalCode $PostalCode -MobilePhone $MobilePhone -ErrorAction SilentlyContinue -ErrorVariable erroruser
             # IF ERROR
             if($usererror){
                 Write-Log -Type error -Prefix "USER CREATION" -Message "Error about user $($DisplayName). Error Message: $($erroruser)"
